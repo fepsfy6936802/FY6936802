@@ -260,8 +260,7 @@ main criterion of chassis design, and the primary function of a high-performance
 
       
 <hr>
-
- <!-- //////////////////////////////////////////////////////////////////////////////// -->
+<!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
@@ -272,7 +271,7 @@ main criterion of chassis design, and the primary function of a high-performance
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'fepsy6936802';
+        const username = 'FEPSFY6936802';
         const repo = 'FY6936802';
 
         const url = https://api.github.com/repos/${username}/${repo}/commits;
@@ -285,7 +284,7 @@ main criterion of chassis design, and the primary function of a high-performance
             });
             if (!response.ok) {
                 throw new Error(Error fetching data: ${response.status} - ${response.statusText});
-                }
+}
             const commits = await response.json();
             if (commits && commits.length > 0) {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
