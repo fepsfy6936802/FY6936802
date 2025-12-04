@@ -93,7 +93,7 @@ p.ex1 {
      
     </table>
 <hr>
-<h3 id="Abstract">Abstract</h3>
+<h3 style=”font-family:calibri:” id="Abstract">Abstract</h3>
 
 <a>
 Formula One is a sport know as the pinnacle of motorsport racing, however most peaople dont understand the significance of the egineering behind it. 
@@ -103,17 +103,15 @@ and show how small aerodynamic changes can significantly influence handling and 
 
 </a>
    <hr>
-
+<video src="Aerodynamics in Formula 1.mp4" width="800" height="450" controls>
+</video>
     
     
- <h3 id="Introduction">Introduction</h3>
+ <h3 style=”font-family:calibri:” id="Introduction">Introduction</h3>
     <pre id="Introduction_InText">  
-Formula One is an extremely competitive sport in which even the smallest design changes to a car can have a significant impact 
-on its performance and known as the epitome of racing in modern day motorsports. It consists of highspeed sharp turns that 
-require the cars to be heavily optimized aerodynamicaly, to generate as much downforce as possible without sacrificing speed. 
-Every second counts and so the manipulation of airflow around the vehicles heavily affect the speed and stability of the car 
-which can be the difference between winning or losing. As a result of this teams invest millions to innovate new technology,
-to push the limits and reach record breaking speeds.
+Formula One is an extremely competitive sport in which even the smallest design changes to a car can have a significant impact on its performance and known as the epitome of racing in modern day motorsports. It consists of highspeed 
+sharp turns that require the cars to be heavily optimised aerodynamicaly, to generate as much downforce as possible without sacrificing speed. Every second counts and so the manipulation of airflow around the vehicles heavily affect 
+the speed and stability of the car which can be the difference between winning or losing. As a result of this teams invest millions to innovate new technology, to push the limits and reach record breaking speeds.
   </pre> 
   
 
@@ -122,7 +120,7 @@ to push the limits and reach record breaking speeds.
 
 
 <hr>
-<h3 id="Analysis and discussion">Analysis and discussion</h3>
+<h3 style=”font-family:calibri:” id="Analysis and discussion">Analysis and discussion</h3>
         <p id ="Analysis_InText">
 
                       
@@ -263,7 +261,7 @@ main criterion of chassis design, and the primary function of a high-performance
       
 <hr>
 
-<!-- //////////////////////////////////////////////////////////////////////////////// -->
+ <!-- //////////////////////////////////////////////////////////////////////////////// -->
   <!-- ////////////////////////////// Adding last update ////////////////////////////// -->
   <!-- //////////////////////////////////////////////////////////////////////////////// -->
     <!-- Last commit time display -->
@@ -274,10 +272,10 @@ main criterion of chassis design, and the primary function of a high-performance
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'fepsfy6936802';
+        const username = 'fepsy6936802';
         const repo = 'FY6936802';
-       
-        const url = `https://api.github.com/repos/${username}/${repo}/commits`;
+
+        const url = https://api.github.com/repos/${username}/${repo}/commits;
         try {
             const response = await fetch(url, {
                 method: 'GET',
@@ -286,14 +284,14 @@ main criterion of chassis design, and the primary function of a high-performance
                 }
             });
             if (!response.ok) {
-                throw new Error(`Error fetching data: ${response.status} - ${response.statusText}`);
-            }
+                throw new Error(Error fetching data: ${response.status} - ${response.statusText});
+                }
             const commits = await response.json();
             if (commits && commits.length > 0) {
                 const lastCommitDate = new Date(commits[0].commit.committer.date);
-               
+
                 // Displaying the time on load
-                document.getElementById('last-updated').innerText = `Last Modified Time: ${lastCommitDate.toLocaleString()}`;
+                document.getElementById('last-updated').innerText = Last Modified Time: ${lastCommitDate.toLocaleString()};
             } else {
                 document.getElementById('last-updated').innerText = 'No commits found in the repository.';
             }
@@ -309,7 +307,7 @@ main criterion of chassis design, and the primary function of a high-performance
         alert("Last modified time has been successfully verified from GitHub API.");
     }
     // Initial load to display the time on page load
-    window.onload = getLastUpdatedTime;
+    window.addEventListener('load', getLastUpdatedTime);
 </script>
 
 
